@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.uz.plugin.fpcalc"
+        version="0.7.0">
+
+  <name>Fingerprint</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/fingerprint.js" target="js/fingerprint.js"/>
+
+  <js-module src="www/fingerprint.js" name="fingerprint">
+    <clobbers target="fingerprint" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Fingerprint">
+        <param name="android-package" value="com.uz.plugin.fpcalc.Fingerprint"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Fingerprint.java" target-dir="src/com/uz/plugin/fpcalc"/>
+  </platform>
+
+
+</plugin>
