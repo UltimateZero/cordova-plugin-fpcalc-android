@@ -1,7 +1,16 @@
 repositories {
-    maven { url "https://jitpack.io" }
+    flatDir {
+      dirs 'libs'
+   }
 }
 
 dependencies {
-    compile "com.github.QuickLyric:fpcalc-android:1.0.1"
+    compile(name:'fpcalc-android', ext:'aar')
+}
+
+android {
+  packagingOptions {
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+  }
 }
