@@ -3,10 +3,10 @@
         id="com.uz.plugin.fpcalc"
         version="0.0.1">
 
-  <name>Fingerprint</name>
+  <name>AudioFingerprint</name>
     <description>Cordova fpcalc Plugin</description>
     <license>MIT</license>
-    <keywords>cordova,fingerprint</keywords>
+    <keywords>cordova,audio,fingerprint</keywords>
  
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
