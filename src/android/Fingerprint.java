@@ -10,10 +10,10 @@ public class Fingerprint extends CordovaPlugin {
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("fingerprint")) {
-            Fpcalc.fpCalc(["test"]);
-            String name = data.getString(0);
-            String message = "Hello, " + name;
-            callbackContext.success(message);
+            String pathToFile = data.getString(0);
+            String[] args = {"-length", "16", pathToFile}
+            ?String result = Fpcalc.fpCalc(args);
+            callbackContext.success(result);
 
             return true;
 
