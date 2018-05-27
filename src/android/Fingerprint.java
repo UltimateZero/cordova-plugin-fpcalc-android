@@ -4,6 +4,7 @@ import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import com.geecko.fpcalc.Fpcalc;
+
 public class Fingerprint extends CordovaPlugin {
 
     @Override
@@ -11,7 +12,7 @@ public class Fingerprint extends CordovaPlugin {
 
         if (action.equals("fingerprint")) {
             String pathToFile = data.getString(0);
-            String[] args = {"-length", "16", pathToFile}
+            String[] args = {"-length", "16", pathToFile};
             String result = Fpcalc.fpCalc(args);
             callbackContext.success(result);
 
