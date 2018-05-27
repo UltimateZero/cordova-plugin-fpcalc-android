@@ -1,0 +1,13 @@
+{
+    "version": "0.0.1",
+    "name": "cordova-plugin-fpcalc-android",
+    "cordova_name": "AudioFingerprint",
+    "description": "Cordova fpcalc Plugin",
+    "license": "MIT",
+    "repo": "https://github.com/UltimateZero/cordova-plugin-fpcalc-android",
+    "issue": "",
+    "keywords": [],
+    "platforms": [
+      "android"
+    ]
+}
