@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.uz.plugin.fpcalc"
         version="0.0.1">
 
   <name>Fingerprint</name>
-
+    <description>Cordova fpcalc Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,fingerprint</keywords>
+ 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
