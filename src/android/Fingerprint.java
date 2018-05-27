@@ -12,7 +12,7 @@ public class Fingerprint extends CordovaPlugin {
         if (action.equals("fingerprint")) {
             String pathToFile = data.getString(0);
             String[] args = {"-length", "16", pathToFile}
-            ?String result = Fpcalc.fpCalc(args);
+            String result = Fpcalc.fpCalc(args);
             callbackContext.success(result);
 
             return true;
